@@ -1,0 +1,23 @@
+.header-nav {
+    height: 6vh;
+    display: flex;
+    background-color: black;
+    color: white;
+    gap: 30px;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+}
+.header-nav li {
+    font-size: large;
+    cursor: pointer;
+}
+.header-nav button {
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    height: 3vh;
+    margin-right: 10px;
+}
