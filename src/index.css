@@ -120,3 +120,144 @@
     margin: 20px;
     padding: 20px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.leftside {
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  justify-content: center;
+  padding-left: 70px;
+  height: 60vh;
+  width: 50vh;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  position: relative;
+  left: 10px;
+}
+
+.leftside img {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-top: -50px;
+}
+
+.rightside {
+  background: black;
+  padding: 4rem 2rem;
+  height: 60vh;
+  width: 30%;
+  position: relative;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+  right: 20px;
+}
+
+.leftside h3 {
+  margin: 0.5rem 0;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.leftside h1 {
+  margin: 0.1rem 0;
+  font-size: 3rem;
+}
+
+.leftside h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 1rem;
+}
+
+.socialicons a {
+  height: 30px;
+  font-size: 1.2rem;
+  color: black;
+  width: 30px;
+  background: #ccc;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.1rem;
+  transition: 0.3s;
+  box-shadow: #464444;
+  border: 2px solid #c7c5c5;
+}
+
+.socialicons a:hover {
+  background-color: #373535;
+  color: white;
+}
+
+nav {
+  position: relative;
+  bottom: 11px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rightside nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.rightside nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.contact-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  background: gray;
+  color: white;
+}
+
+.profileimage {
+  height: 64vh;
+  bottom: 0;
+  margin-top: 10px;
+  right: 2rem;
+  display: flex;
+}

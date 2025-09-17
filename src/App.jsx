@@ -1,5 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
+import Profile from './Profile';
 
 function App() {
 
@@ -7,6 +8,8 @@ function App() {
     <>
     <Header />
     <Hero />
+    < Header />
+    < Profile />
     </>
   )
 }
