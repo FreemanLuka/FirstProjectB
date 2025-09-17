@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .header-nav {
     height: 6vh;
     display: flex;
@@ -20,4 +24,99 @@
     border: none;
     height: 3vh;
     margin-right: 10px;
+}
+
+.hero {
+    background-color: rgb(204, 206, 201);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.hero-explore-btn{
+    background-color: rgba(128, 128, 128, 0.13);
+    cursor: pointer;
+    height: 5vh;
+    width: 10vw;
+    font-size: large;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+    /* border-width: 5px; */
+    margin-top: 20px;
+}
+.hero-main{
+    margin: 50px 170px 50px 170px;
+}
+.hero-main h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-main p{
+    font-size: large;
+    margin-bottom: 20px;
+}
+.hero-headings{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: solid black 3px;
+    padding: 10px 30px 10px 30px;
+
+}
+.hero-design{
+    display: flex;
+
+}
+.hero-design div{
+    margin: 20px;
+}
+.hero-design-plus{
+    padding: 20px 220px 50px 220px;
+}
+.hero-tools {
+    /* font-size: xx-large; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.hero-tools h2{
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: left;
+
+    /* text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: black; 
+    text-shadow: 2px 2px 4px #000000; */
+
+
+}
+.hero-tools p{
+    margin-bottom: 20px;
+}
+.hero-tools img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+/* .hero-tools img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+} */
+.hero-tools-div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
 }
