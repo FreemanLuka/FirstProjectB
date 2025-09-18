@@ -7,9 +7,8 @@ function App() {
   return (
     <>
     <Header />
-    <Hero />
-    < Header />
     < Profile />
+    <Hero />
     </>
   )
 }

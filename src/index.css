@@ -1,29 +1,52 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .header-nav {
-    height: 6vh;
+    height: 3rem;
     display: flex;
     background-color: black;
     color: white;
     gap: 30px;
-    list-style: none;
     justify-content: right;
     align-items: center;
+    list-style: none;
 }
-.header-nav li {
+.header-nav li a {
     font-size: large;
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
 }
 .header-nav button {
     background-color: white;
     color: black;
-    border-radius: 7px;
+    border-radius: 10px;
     cursor: pointer;
     border: none;
-    height: 3vh;
+    height: 1.5rem;
     margin-right: 10px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    /* transition: 0.3s; */
+    width: 8rem;
+    height: 2rem;
+}
+.header-nav button a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 
 .hero {
@@ -34,6 +57,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 .hero-explore-btn{
     background-color: rgba(128, 128, 128, 0.13);
@@ -44,11 +68,12 @@
     font-weight: bold;
     border-top: none;
     border-bottom: none;
-    /* border-width: 5px; */
     margin-top: 20px;
 }
 .hero-main{
-    margin: 50px 170px 50px 170px;
+    margin: 50px auto; 
+    max-width: 1000px;
+    padding: 0 1rem;
 }
 .hero-main h1{
     font-size: xx-large;
@@ -69,32 +94,22 @@
 }
 .hero-design{
     display: flex;
-
+    flex-wrap: wrap;
 }
 .hero-design div{
     margin: 20px;
 }
 .hero-design-plus{
-    padding: 20px 220px 50px 220px;
+    padding: 20px 5%;
 }
 .hero-tools {
-    /* font-size: xx-large; */
     margin-top: 50px;
     margin-bottom: 20px;
 }
 .hero-tools h2{
-    /* margin-bottom: 10px; */
     font-weight: bold;
     margin-left: 20px;
     text-align: left;
-
-    /* text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: black; 
-    text-shadow: 2px 2px 4px #000000; */
-
-
 }
 .hero-tools p{
     margin-bottom: 20px;
@@ -107,34 +122,85 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
 }
-/* .hero-tools img:hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.1);
-} */
 .hero-tools-div{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 90px;
+    /* grid-template-columns: repeat(4, minmax(120px, 1fr)); */
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     margin: 20px;
     padding: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+
+/* ------- Force side-by-side on wide screens, stack on small screens ------- */
+.profile {
+  display: flex;               /* make it a flex row container */
+  flex-direction: row;
+  flex-wrap: nowrap;           /* keep them side-by-side on wide screens */
+  align-items: stretch;        /* equal height columns */
+  justify-content: space-between;
+  gap: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.profile {
-  height: 100vh;
+/* Ensure each side takes half the available width and can shrink */
+.leftside,
+.rightside {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  flex: 0 0 50%;               /* don't grow, base 50% */
+  max-width: 50%;
+  min-width: 0;                /* **important** allows them to shrink below content size */
+  height: auto;
+  position: relative;
+  left: 0;                     /* reset any offsets */
+  right: 0;
+  overflow-wrap: break-word;   /* prevent long words/content from forcing width */
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+
+/* Remove any large paddings that can push width beyond container */
+.leftside { padding-left: 2rem;
+  background: #ddd;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  position: relative;
+ }
+.rightside { background: black;
+  position: relative;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+}
+.leftside, .rightside { padding-right: 2rem; }
+
+/* Responsive: stack on small viewports */
+@media (max-width: 900px) {
+  .profile {
+    flex-wrap: wrap;
+  }
+  .leftside,
+  .rightside {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+    clip-path: none;           /* optional: remove angled edges on small screens */
+  }
+}
+
+
+
+/* .profile {
+  margin-top: 4rem;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   font-family: Arial, Helvetica, sans-serif;
-}
-
+  flex-wrap: wrap; 
+} 
 .leftside {
   background: #ddd;
   display: flex;
@@ -143,13 +209,23 @@
   padding: 4rem 2rem;
   justify-content: center;
   padding-left: 70px;
-  height: 60vh;
-  width: 50vh;
+  height: 100%;
+  width: 100%;
+  max-width: 50%;
   clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
   position: relative;
-  left: 10px;
+  left: 0;
 }
-
+.rightside {
+  background: black;
+  padding: 4rem 2rem;
+  height: 100%;
+  width: 100%;
+  max-width: 50%;
+  position: relative;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+  right: 0;
+} */
 .leftside img {
   display: flex;
   height: 30px;
@@ -157,17 +233,6 @@
   object-fit: cover;
   margin-top: -50px;
 }
-
-.rightside {
-  background: black;
-  padding: 4rem 2rem;
-  height: 60vh;
-  width: 30%;
-  position: relative;
-  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
-  right: 20px;
-}
-
 .leftside h3 {
   margin: 0.5rem 0;
   margin-right: 200px;
@@ -175,18 +240,15 @@
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
-
 .leftside h1 {
   margin: 0.1rem 0;
   font-size: 3rem;
 }
-
 .leftside h4 {
   margin: 0;
   font-size: 1.2rem;
   color: gray;
 }
-
 .socialicons {
   display: flex;
   justify-content: center;
@@ -194,7 +256,6 @@
   margin-top: 5rem;
   gap: 1rem;
 }
-
 .socialicons a {
   height: 30px;
   font-size: 1.2rem;
@@ -211,35 +272,30 @@
   box-shadow: #464444;
   border: 2px solid #c7c5c5;
 }
-
 .socialicons a:hover {
   background-color: #373535;
   color: white;
 }
-
-nav {
+.nav {
   position: relative;
   bottom: 11px;
-  left: 25px;
+  left: 0;
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
 .rightside nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
-
 .rightside nav a {
   text-decoration: none;
   color: white;
   font-size: 0.7rem;
   font-weight: bold;
 }
-
 .contact-btn {
   background: white;
   color: black;
@@ -253,11 +309,15 @@ nav {
   background: gray;
   color: white;
 }
-
 .profileimage {
   height: 64vh;
   bottom: 0;
   margin-top: 10px;
   right: 2rem;
   display: flex;
-}
+} 
+
+/*
+* {
+  outline: 1px solid red;
+} */

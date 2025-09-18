@@ -3,7 +3,7 @@ import htmlIcon from "./assets/html.png"
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="about" className="hero">
         <h2 className="hero-headings">
             ABOUT ME
         </h2>
@@ -29,7 +29,7 @@ const Hero = () => {
 
         <img src="" alt="" />
 
-        <h2 className="hero-headings">
+        <h2 id="skills" className="hero-headings">
             SKILLS
         </h2>
 
