@@ -1,5 +1,11 @@
 import cssIcon from "./assets/css.png"
 import htmlIcon from "./assets/html.png"
+import javaScriptIcon from "./assets/javaScript.svg"
+import reactIcon from "./assets/react.svg"
+import angielskiIcon from "./assets/angielski.svg"
+import hiszpanskiIcon from "./assets/hiszpanski.svg"
+import cIcon from "./assets/c.svg"
+import ccIcon from "./assets/cc.svg"
 
 const Hero = () => {
   return (
@@ -37,92 +43,65 @@ const Hero = () => {
             <h2>USING NOW:</h2>
             <div className="hero-tools-div">
                 <div>
-                    <img src={cssIcon} alt="CSS icon" />
-                    <p>CSS</p>
-                </div>
-                <div>
-                    <img src={cssIcon} alt="CSS icon" />
-                    <p>CSS</p>
-                </div>
-                <div>
-                    <img src={cssIcon} alt="CSS icon" />
-                    <p>CSS</p>
+                    <img src={htmlIcon} alt="CSS icon" />
+                    <p>HTML</p>
                 </div>
                 <div>
                     <img src={cssIcon} alt="CSS icon" />
                     <p>CSS</p>
                 </div>
                 <div>
+                    <img src={javaScriptIcon} alt="CSS icon" />
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src={reactIcon} alt="CSS icon" />
+                    <p>React</p>
+                </div>
+            </div>
+        </div>
+        
+        <div className="hero-tools">
+            <h2>LEARNING:</h2>
+            <div className="hero-tools-div">
+                <div>
+                    <img src={javaScriptIcon} alt="CSS icon" />
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src={reactIcon} alt="CSS icon" />
+                    <p>React</p>
+                </div>
+                <div>
+                    <img src={htmlIcon} alt="CSS icon" />
+                    <p>HTML</p>
+                </div>
+                <div>
                     <img src={cssIcon} alt="CSS icon" />
                     <p>CSS</p>
-                </div>
-                <div>
-                    <img src={cssIcon} alt="CSS icon" />
-                    <p>CSS</p>
-                </div>
-
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src={htmlIcon} alt="HTML icon" />
-                    <p>HTML</p>
                 </div>
             </div>
         </div>
 
-        <div>
-            <h1>LEARNING:</h1>
-            <div>
-
-            </div>
-        </div>
-
-        <div>
-            <h1>OTHER SKILLS:</h1>
-            <div>
-
+        <div className="hero-tools">
+            <h2>OTHER SKILLS:</h2>
+            <div className="hero-tools-div">
+                <div>
+                    <img src={angielskiIcon} alt="CSS icon" />
+                    <p>ANGIELSKI <br />C1/C2</p>
+                </div>
+                <div>
+                    <img src={hiszpanskiIcon} alt="CSS icon" />
+                    <p>HISZPANSKI <br />B1/B2</p>
+                </div>
+                <div>
+                    <img src={ccIcon} alt="icon" />
+                    <p>C++</p>
+                </div>
+                <div>
+                    <img src={cIcon} alt="icon" />
+                    <p>C</p>
+                </div>
             </div>
         </div>
     </section>

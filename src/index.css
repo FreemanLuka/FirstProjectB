@@ -27,6 +27,9 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+.header-nav li a:hover {
+  color: wheat;
+}
 .header-nav button {
     background-color: white;
     color: black;
@@ -34,14 +37,18 @@ body {
     cursor: pointer;
     border: none;
     height: 1.5rem;
-    margin-right: 10px;
+    margin-right: 2rem;
     text-decoration: none;
     padding: 5px;
     font-size: medium;
     font-weight: bold;
-    /* transition: 0.3s; */
+    transition: 0.3s;
     width: 8rem;
     height: 2rem;
+}
+.header-nav button:hover {
+  background-color: grey;
+  color: white;
 }
 .header-nav button a {
     text-decoration: none;
@@ -57,18 +64,20 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 5rem;
 }
 .hero-explore-btn{
-    background-color: rgba(128, 128, 128, 0.13);
+    background-color: rgb(204, 206, 201);
     cursor: pointer;
-    height: 5vh;
     width: 10vw;
     font-size: large;
     font-weight: bold;
     border-top: none;
     border-bottom: none;
     margin-top: 20px;
+}
+.hero-explore-btn:hover {
+  color: white;
 }
 .hero-main{
     margin: 50px auto; 
@@ -94,13 +103,14 @@ body {
 }
 .hero-design{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .hero-design div{
-    margin: 20px;
+    margin: 20px 10%;
 }
 .hero-design-plus{
-    padding: 20px 5%;
+    padding: 20px 30%;
+    padding-bottom: 4rem;
 }
 .hero-tools {
     margin-top: 50px;
@@ -117,7 +127,7 @@ body {
 .hero-tools img{
     width: 70px;
     height: 70px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
