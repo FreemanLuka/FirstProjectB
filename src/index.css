@@ -316,8 +316,105 @@ body {
   right: 2rem;
   display: flex;
 } 
+.port-container{
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
+	align-items: center;
+	justify-content: s;
+}
+.port-1{
+	background-image: url('/hill.png');
+	background-position: center;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.port-heading{
+	text-align: center;
+	padding: 10%;
+	height: 0vh;
+}
+.bordered-word{
+	border: 3px solid black;
+	padding: 19px 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-/*
-* {
-  outline: 1px solid red;
-} */
+}
+.port-menu{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	background-color:  rgb(17, 1, 1);
+	color: white;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0%;
+	padding: 2%;
+	list-style: none;
+	
+}
+.full-underline{
+	width: 30%;
+	text-align: center;
+	border-bottom: 1px solid white;
+	justify-content: space-between;
+	display: flex;
+	list-style: none;
+	padding-bottom: 8px;
+
+}
+.port-menu li{
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px
+}
+.port-menu li :hover{
+text-decoration: underline;
+}
+.port-images{
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.more{
+	background-color: rgb(17, 1, 1);
+	color: blanchedalmond;
+	height: fit-content;
+	padding: 2%;
+	text-align: center;
+	margin-top: 0%;
+}
+.more :hover{
+	cursor: pointer;
+}
+.port-images{
+	gap: 0%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: block;
+	line-height: 0;
+}
+.heroo-image{
+	width: 33.3%;
+	height: 35vh;
+	margin: 0;
+	padding: 0;
+}
+.heroo-images{
+	width: 33.3%;
+	height: 35vh;
+	margin: 0;
+	padding: 0;
+}
+.heroo-images:hover{
+	cursor: pointer;
+	filter: brightness(80%);
+	transition: 0.3s;
+}
