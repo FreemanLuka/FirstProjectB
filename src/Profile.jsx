@@ -31,7 +31,7 @@ const Profile = () => {
       </div>
 
       <div className="rightside">
-        <nav>
+        <nav className="profilenav">
           <ul>
             <li>
               <a href="#">About me</a>
