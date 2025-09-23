@@ -143,74 +143,16 @@ body {
     padding: 20px;
 }
 
-
-/* ------- Force side-by-side on wide screens, stack on small screens ------- */
 .profile {
-  display: flex;               /* make it a flex row container */
-  flex-direction: row;
-  flex-wrap: nowrap;           /* keep them side-by-side on wide screens */
-  align-items: stretch;        /* equal height columns */
-  justify-content: space-between;
-  gap: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Ensure each side takes half the available width and can shrink */
-.leftside,
-.rightside {
-  margin-top: 3rem;
-  box-sizing: border-box;
-  flex: 0 0 50%;               /* don't grow, base 50% */
-  max-width: 50%;
-  min-width: 0;                /* **important** allows them to shrink below content size */
-  height: auto;
-  position: relative;
-  left: 0;                     /* reset any offsets */
-  right: 0;
-  overflow-wrap: break-word;   /* prevent long words/content from forcing width */
-  -ms-word-break: break-word;
-  word-break: break-word;
-}
-
-/* Remove any large paddings that can push width beyond container */
-.leftside { padding-left: 2rem;
-  background: #ddd;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
-  position: relative;
- }
-.rightside { background: black;
-  position: relative;
-  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
-}
-.leftside, .rightside { padding-right: 2rem; }
-
-/* Responsive: stack on small viewports */
-@media (max-width: 900px) {
-  .profile {
-    flex-wrap: wrap;
-  }
-  .leftside,
-  .rightside {
-    flex: 1 1 100%;
-    max-width: 100%;
-    min-width: 0;
-    clip-path: none;           /* optional: remove angled edges on small screens */
-  }
-}
-
-
-
-/* .profile {
-  margin-top: 4rem;
-  min-height: 100vh;
-  width: 100%;
+  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  background-color: #741919ad;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  flex-wrap: wrap; 
-} 
+}
+
 .leftside {
   background: #ddd;
   display: flex;
@@ -219,23 +161,13 @@ body {
   padding: 4rem 2rem;
   justify-content: center;
   padding-left: 70px;
-  height: 100%;
-  width: 100%;
-  max-width: 50%;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  height: 52vh;
+  width: 100vh;
   position: relative;
-  left: 0;
+  /* left: 10px; */
+  /* clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); */
 }
-.rightside {
-  background: black;
-  padding: 4rem 2rem;
-  height: 100%;
-  width: 100%;
-  max-width: 50%;
-  position: relative;
-  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
-  right: 0;
-} */
+
 .leftside img {
   display: flex;
   height: 30px;
@@ -243,6 +175,17 @@ body {
   object-fit: cover;
   margin-top: -50px;
 }
+
+.rightside {
+  background: black;
+  padding: 4rem 2rem;
+  height: 52vh;
+  width: 100vh;
+  position: relative;
+  /* clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%); */
+  /* right: 20px; */
+}
+
 .leftside h3 {
   margin: 0.5rem 0;
   margin-right: 200px;
@@ -250,15 +193,18 @@ body {
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
+
 .leftside h1 {
   margin: 0.1rem 0;
   font-size: 3rem;
 }
+
 .leftside h4 {
   margin: 0;
   font-size: 1.2rem;
   color: gray;
 }
+
 .socialicons {
   display: flex;
   justify-content: center;
@@ -266,6 +212,7 @@ body {
   margin-top: 5rem;
   gap: 1rem;
 }
+
 .socialicons a {
   height: 30px;
   font-size: 1.2rem;
@@ -282,30 +229,35 @@ body {
   box-shadow: #464444;
   border: 2px solid #c7c5c5;
 }
+
 .socialicons a:hover {
   background-color: #373535;
   color: white;
 }
-.nav {
+
+.profilenav {
   position: relative;
   bottom: 11px;
-  left: 0;
+  left: 25px;
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .rightside nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
+
 .rightside nav a {
   text-decoration: none;
   color: white;
   font-size: 0.7rem;
   font-weight: bold;
 }
+
 .contact-btn {
   background: white;
   color: black;
@@ -315,17 +267,67 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
 .contact-btn:hover {
   background: gray;
   color: white;
 }
+
 .profileimage {
-  height: 64vh;
+  height: 56vh;
   bottom: 0;
   margin-top: 10px;
   right: 2rem;
   display: flex;
-} 
+}
+
+.brand {
+  /* display: flex; */
+  background-color: rgba(0, 0, 0, 0.884);
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand h3 {
+  /* margin: 0.5rem 0; */
+  margin-left: 50px;
+  /* margin-top: 100px; */
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.brand p {
+  margin-left: 50px;
+  font-size: 0.7rem;
+  color: white;
+  width: 70%;
+  line-height: 1rem;
+  padding: 0px, 20px 20px, 0px;
+  text-align: justify;
+}
+
+.read-more-btn {
+  background-color: rgba(0, 0, 0, 0.884);
+  color: white;
+  cursor: pointer;
+  height: 4vh;
+  width: 6vw;
+  font-size: 10px;
+  border-top: none;
+  border-bottom: none;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 8px;
+  margin-bottom: 20px;
+  /* border: 1px solid white; */
+  border-color: white;
+}
+
+
 .port-container{
 	width: 100%;
 	height: 100%;
