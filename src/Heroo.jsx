@@ -2,7 +2,7 @@
 import "./index.css"
 
 function Heroo() {
-	return <section className="port-container">
+	return <section id="portfolio" className="port-container">
 		<div className="port-1">
 			<h3 className="port-heading"><span className="bordered-word">PORTFOLIO</span>
 			</h3>
