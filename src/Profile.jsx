@@ -34,13 +34,13 @@ const Profile = () => {
         <nav className="profilenav">
           <ul>
             <li>
-              <a href="#">About me</a>
+              <a href="#about">About me</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
               <button className="contact-btn">Contact Me</button>
