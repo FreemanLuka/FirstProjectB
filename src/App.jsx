@@ -3,6 +3,8 @@ import Hero from './Hero';
 import Profile from './Profile';
 import Heroo from './Heroo';
 import Brand from './Brand';
+import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <Brand />
     <Hero />
 	  <Heroo />
+    <Contact />
+    <Footer />
     </>
   )
 }
