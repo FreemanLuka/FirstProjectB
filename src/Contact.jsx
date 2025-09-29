@@ -5,7 +5,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
 
             <div class="wrap">
                 <div class="card" role="region" aria-label="Contact card">

@@ -42,9 +42,11 @@ const Profile = () => {
             <li>
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li>
-              <button className="contact-btn">Contact Me</button>
-            </li>
+            
+              <button className="contact-btn">
+                <a href="#contact">Contact Me</a>
+              </button>
+            
           </ul>
         </nav>
 
