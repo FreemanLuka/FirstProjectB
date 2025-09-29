@@ -1,6 +1,6 @@
 import cssIcon from "./assets/css.png"
 import htmlIcon from "./assets/html.png"
-import javaScriptIcon from "./assets/javaScript.svg"
+import javaScriptIcon from "./assets/javascript.svg"
 import reactIcon from "./assets/react.svg"
 import angielskiIcon from "./assets/angielski.svg"
 import hiszpanskiIcon from "./assets/hiszpanski.svg"
