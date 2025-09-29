@@ -430,7 +430,11 @@ text-decoration: underline;
 	filter: brightness(80%);
 	transition: 0.3s;
 }
-
+.heroo-image:hover{
+	cursor: pointer;
+	filter: brightness(80%);
+	transition: 0.3s;
+}
 .card{ 
       width:100%;
       max-width:480px;
