@@ -2,11 +2,14 @@ import React from 'react'
 
 const Header = () => {
   return (
-      <nav className='header-nav'>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Portfolio</li>
-        <button className='header-nav-btn'>CONTACT ME</button>
+      <nav >
+        <ul className='header-nav'>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          {/* <li><a href="#contact">Contact</a></li> */}
+          <button className='header-nav-btn'><a href="#contact">CONTACT ME</a></button>
+        </ul>
       </nav>
   )
 }
