@@ -1,6 +1,6 @@
 import React from "react";
 import logo1 from "./Images/logo1.png";
-import { FaFacebookF, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import  { MdAlternateEmail } from "react-icons/md"; // email icon
 import profileimage from "./Images/profileimage.png"
 
