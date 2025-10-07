@@ -1,17 +1,18 @@
 import Header from './Header';
 import Hero from './Hero';
 import Profile from './Profile';
+import Brand from './Brand';
 
 function App() {
 
   return (
     <>
-    <Header />
-    <Hero />
-    < Header />
-    < Profile />
+      <Header />
+      <Profile />
+      <Brand />
+      <Hero />
     </>
-  )
+  );
 }
 
 export default App
