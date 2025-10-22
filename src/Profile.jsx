@@ -13,12 +13,12 @@ const Profile = () => {
           <img src={logo1} alt="Logo" />
         </div>
 
-        <h3>Hi, I am</h3>
-        <h1>Tomasz Gajda</h1>
-        <h4>Front-end Developer / UI designer</h4>
+        <h3>Hi, we are</h3>
+        <h1>PORA5 SEFE</h1>
+        <h4>Front-end Developers</h4>
 
         <div className="socialicons">
-          <a href="mailto:example@email.com">
+          <a href="https://gmail.com/" target="_blank" rel="noreferrer">
             <MdAlternateEmail />
           </a>
           <a href="https://github.com/" target="_blank" rel="noreferrer">
